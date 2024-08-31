@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/black"
+        tools:context=".FinalTouchActivity">
+
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Touch"
+            android:textColor="@color/white"
+            android:layout_margin="12sp"
+            android:textSize="40sp"/>
+
+    <FrameLayout
+            android:id="@+id/frameLayoutCardDetailsForm"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_margin="10sp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/card_details_form">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12sp"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="20sp"
+                    android:hint="I am an" />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Profession"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:padding="8sp"
+                    android:textSize="24sp"
+                    android:textColorHint="@color/black" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginBottom="8dp"/>
+            
+            
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:background="@android:color/transparent"
+                    android:hint="website"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/shy_grey"
+                    />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:background="@android:color/transparent"
+                    android:hint="Email"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/shy_grey"
+            />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/frameLayoutColorCardIndicator"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_margin="10sp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/card_color_indicator">
+
+        <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_header_background"
+                android:textColor="@color/black"
+                android:hint="Full Name" />
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_card_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#333333"
+            app:cornerRadius="12dp"
+            android:padding="15sp"
+            android:text="Save Card"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_margin="24sp"
+            android:layout_alignParentBottom="true" />
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#333333"
+            app:cornerRadius="12dp"
+            android:padding="15sp"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true" android:layout_marginTop="24sp" android:layout_marginStart="24sp"
+            android:layout_marginEnd="24sp" android:layout_marginBottom="24sp"/>
+
+
+
+
+
+
+</RelativeLayout>
